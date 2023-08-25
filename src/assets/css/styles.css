@@ -1,0 +1,52 @@
+.animateSlide{
+    animation: fadeInSlide 1s ease-in-out;
+}
+.animateSlideCaption {
+    animation: slideInCaption 1s ease;
+}
+.animateTagLine {
+    animation: slideInTagLine 1s linear;
+}
+.animateSlideBtn {
+    animation: slideInButton 1s linear;
+}
+.active{
+    color: darkred;
+    font-weight: bold;
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slideInCaption {
+    0%{
+        transform: translateY(-300%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideInTagLine {
+    0%{
+        transform: translateX(-100%) ;
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInButton {
+    from{
+        transform: translateX(500%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}

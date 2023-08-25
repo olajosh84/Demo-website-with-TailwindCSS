@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html id="top" lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using MERN"
+    />
+    <title>Website with MERN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-[#f1f5f8] relative">
+    <div id="root"></div>
+    <!--back to top link-->
+    <a href="#top">
+      <button id="back-to-top"  class="fixed bg-blue-900 text-white bottom-11 right-8 z-50 px-3 py-2 rounded-lg bg-opacity-80 transition-all ease-linear duration-200 hover:bg-opacity-100">
+        <i class="fa-solid fa-arrow-up text-lg"></i>
+      </button>
+    </a>
+    <script>
+      /**
+       * this purpose of the following block code is
+       * to show the show the back-to-top-of-the-page 
+       * button when you scroll down to 500px of window height
+       * and vice versa
+       */
+      const backToTopBtn = document.getElementById("back-to-top");
+      window.addEventListener("scroll", () => {
+        let windowHeight = window.scrollY;
+        windowHeight < 500 ? backToTopBtn.style.display = "none" : backToTopBtn.style.display = "block";   
+      })
+    </script>
+  </body>
+</html>
