@@ -1,5 +1,3 @@
-import services from "./services";
-
 const faqs = [
     {
         id: 1,
